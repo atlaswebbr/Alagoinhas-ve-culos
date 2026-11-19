@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alagoinhas Veículos | Seminovos e Multimarcas em Alagoinhas - BA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Faixa Atlas Web -->
+  <div class="bg-slate-900 border-b border-slate-800 px-4 py-2 text-center text-xs text-slate-300">
+    Prévia Demonstrativa • Desenvolvida por <strong class="text-sky-400 font-semibold">Atlas Web</strong>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-400/40 text-sky-400 flex items-center justify-center font-black text-sm">
+          AV
+        </div>
+        <div>
+          <span class="block font-extrabold text-sm tracking-wide text-white">ALAGOINHAS <span class="text-sky-400">VEÍCULOS</span></span>
+          <span class="block text-[11px] text-slate-400">Seminovos &amp; Multimarcas • Alagoinhas - BA</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a href="#estoque" class="hidden sm:inline-block text-xs font-semibold text-slate-300 hover:text-sky-400 px-3 py-2 transition">
+          Estoque
+        </a>
+        <button onclick="abrirModalWhats('Olá! Vim pelo site da Alagoinhas Veículos e gostaria de falar com um consultor sobre o estoque disponível.')"
+          class="bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-extrabold px-4 py-2.5 rounded-full shadow-lg shadow-sky-500/20 transition cursor-pointer">
+          Falar com Consultor
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative overflow-hidden py-14 sm:py-20 px-4 border-b border-slate-800/80">
+    <div class="absolute -top-24 -right-24 w-80 h-80 bg-sky-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto relative z-10 grid sm:grid-cols-12 gap-8 items-center">
+      <div class="sm:col-span-8 space-y-5">
+        <div class="inline-flex items-center gap-2 bg-slate-900 border border-sky-500/30 text-sky-300 text-xs font-semibold px-3.5 py-1.5 rounded-full">
+          <span>🚗 Seminovos Revisados • Procedência Garantida em Alagoinhas</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-white">
+          Seu próximo carro com <span class="text-sky-400">procedência, garantia</span> e aprovação rápida.
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+          Veículos selecionados e periciados em Alagoinhas - BA. Financiamos com as melhores taxas e aceitamos seu usado na troca com avaliação justa.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="#estoque" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm px-6 py-3.5 rounded-xl text-center transition shadow-lg shadow-sky-500/20">
+            Ver Veículos em Destaque
+          </a>
+          <button onclick="abrirModalWhats('Olá! Gostaria de simular um financiamento ou avaliar meu carro na troca na Alagoinhas Veículos.')"
+            class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-semibold text-sm px-6 py-3.5 rounded-xl text-center transition cursor-pointer">
+            Simular Financiamento
+          </button>
+        </div>
+      </div>
+
+      <div class="sm:col-span-4">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 space-y-3.5 shadow-xl">
+          <p class="text-xs font-extrabold uppercase tracking-wider text-sky-400">Diferenciais da Loja</p>
+          <ul class="space-y-3 text-xs text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <span class="text-sky-400 font-bold">✓</span>
+              <span><strong>Laudo &amp; Procedência:</strong> veículos revisados e com documentação 100% em dia.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-sky-400 font-bold">✓</span>
+              <span><strong>Financiamento Facilitado:</strong> análise rápida com os principais bancos do mercado.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-sky-400 font-bold">✓</span>
+              <span><strong>Troca com Troco:</strong> avaliamos seu carro ou moto atual na hora.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estoque Demonstrativo -->
+  <section id="estoque" class="py-14 px-4 max-w-5xl mx-auto">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Showroom Digital</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Categorias do Estoque</h2>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button onclick="filtrar('todos', this)" class="filtro-btn bg-sky-500 text-slate-950 text-xs font-bold px-3.5 py-2 rounded-full cursor-pointer">Todos</button>
+        <button onclick="filtrar('hatch', this)" class="filtro-btn bg-slate-900 text-slate-300 border border-slate-800 text-xs font-semibold px-3.5 py-2 rounded-full cursor-pointer">Hatches</button>
+        <button onclick="filtrar('sedan', this)" class="filtro-btn bg-slate-900 text-slate-300 border border-slate-800 text-xs font-semibold px-3.5 py-2 rounded-full cursor-pointer">Sedans</button>
+        <button onclick="filtrar('suv', this)" class="filtro-btn bg-slate-900 text-slate-300 border border-slate-800 text-xs font-semibold px-3.5 py-2 rounded-full cursor-pointer">SUVs</button>
+        <button onclick="filtrar('picape', this)" class="filtro-btn bg-slate-900 text-slate-300 border border-slate-800 text-xs font-semibold px-3.5 py-2 rounded-full cursor-pointer">Picapes</button>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      <!-- Card 1 -->
+      <div data-cat="hatch" class="card-carro bg-slate-900 border border-slate-800 hover:border-sky-500/40 rounded-2xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-sky-500/15 text-sky-300 px-3 py-1 rounded-full">Hatch Econômico</span>
+            <span class="text-xs text-slate-400 font-semibold">Completo • Flex</span>
+          </div>
+          <h3 class="text-lg font-bold text-white">Hatches Compactos &amp; Econômicos</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Baixo consumo, manutenção acessível, ar-condicionado, direção elétrica e multimídia para rodar leve na cidade ou na estrada.
+          </p>
+        </div>
+        <button onclick="abrirModalWhats('Olá! Quais opções de carros Hatch vocês têm disponíveis hoje na Alagoinhas Veículos?')"
+          class="mt-5 w-full bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+          Pedir Fotos &amp; Valores no WhatsApp →
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-cat="sedan" class="card-carro bg-slate-900 border border-slate-800 hover:border-sky-500/40 rounded-2xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-sky-500/15 text-sky-300 px-3 py-1 rounded-full">Sedan</span>
+            <span class="text-xs text-slate-400 font-semibold">Conforto &amp; Porta-malas</span>
+          </div>
+          <h3 class="text-lg font-bold text-white">Sedans Espaçosos &amp; Automáticos</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Ideais para família e viagens, com amplo espaço interno, porta-malas generoso e excelente estabilidade.
+          </p>
+        </div>
+        <button onclick="abrirModalWhats('Olá! Gostaria de ver os modelos Sedan disponíveis no estoque da Alagoinhas Veículos.')"
+          class="mt-5 w-full bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+          Pedir Fotos &amp; Valores no WhatsApp →
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-cat="suv" class="card-carro bg-slate-900 border border-slate-800 hover:border-sky-500/40 rounded-2xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-amber-400/15 text-amber-300 px-3 py-1 rounded-full">SUV</span>
+            <span class="text-xs text-slate-400 font-semibold">Destaque</span>
+          </div>
+          <h3 class="text-lg font-bold text-white">SUVs Urbanos &amp; Familiares</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Posição elevada ao dirigir, tecnologia embarcada, segurança reforçada e conforto total em qualquer piso.
+          </p>
+        </div>
+        <button onclick="abrirModalWhats('Olá! Quero conferir os SUVs disponíveis hoje na Alagoinhas Veículos.')"
+          class="mt-5 w-full bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+          Pedir Fotos &amp; Valores no WhatsApp →
+        </button>
+      </div>
+
+      <!-- Card 4 -->
+      <div data-cat="picape" class="card-carro bg-slate-900 border border-slate-800 hover:border-sky-500/40 rounded-2xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-sky-500/15 text-sky-300 px-3 py-1 rounded-full">Picape &amp; Utilitário</span>
+            <span class="text-xs text-slate-400 font-semibold">Trabalho &amp; Lazer</span>
+          </div>
+          <h3 class="text-lg font-bold text-white">Picapes Leves &amp; Médias</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Força, robustez e caçamba pronta para o dia a dia de trabalho ou viagens pela região.
+          </p>
+        </div>
+        <button onclick="abrirModalWhats('Olá! Gostaria de saber quais Picapes vocês têm no pátio da Alagoinhas Veículos.')"
+          class="mt-5 w-full bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+          Pedir Fotos &amp; Valores no WhatsApp →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliação & Localização -->
+  <section class="py-12 px-4 border-t border-slate-800 bg-slate-900/50">
+    <div class="max-w-5xl mx-auto grid sm:grid-cols-2 gap-6 items-center">
+      <div class="space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Visite Nosso Pátio</span>
+        <h2 class="text-2xl font-extrabold text-white">Alagoinhas - Bahia</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Venha fazer um test-drive sem compromisso ou peça um vídeo detalhado do veículo pelo WhatsApp antes de vir à loja.
+        </p>
+        <div class="pt-2 flex flex-wrap gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=Alagoinhas+Veiculos+Alagoinhas+BA" target="_blank" rel="noopener noreferrer"
+            class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-4 py-3 rounded-xl transition">
+            📍 Ver Localização no Maps
+          </a>
+          <a href="https://www.instagram.com/alagoinhasveiculos/" target="_blank" rel="noopener noreferrer"
+            class="border border-slate-700 hover:border-sky-400 text-slate-200 text-xs font-bold px-4 py-3 rounded-xl transition">
+            @alagoinhasveiculos →
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-2">
+        <p class="text-xs font-bold text-sky-400 uppercase tracking-wider">Horário de Atendimento</p>
+        <p class="text-sm text-white font-semibold">Segunda a Sexta: 08h às 18h</p>
+        <p class="text-sm text-white font-semibold">Sábado: 08h às 13h</p>
+        <p class="text-xs text-slate-400 pt-2">Financiamento bancário • Carta de crédito • Troca com troco</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-6 px-4 text-center text-xs text-slate-500 space-y-1">
+    <p><strong class="text-slate-300">Alagoinhas Veículos</strong> • Seminovos e Multimarcas - Alagoinhas - BA</p>
+    <p>Página demonstrativa criada por <strong class="text-sky-400">Atlas Web</strong></p>
+  </footer>
+
+  <!-- Modal Simulação WhatsApp -->
+  <div id="modalWhats" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-sky-500/30 rounded-2xl max-w-md w-full p-6 space-y-4 shadow-2xl">
+      <div class="flex items-center justify-between">
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Simulação WhatsApp Comercial</span>
+        <button onclick="fecharModalWhats()" class="text-slate-400 hover:text-white text-lg font-bold cursor-pointer">✕</button>
+      </div>
+      <h4 class="text-lg font-bold text-white">Lead qualificado direto no WhatsApp!</h4>
+      <p class="text-xs text-slate-300 leading-relaxed">
+        No site oficial, o comprador já cai direto no WhatsApp da <strong>Alagoinhas Veículos</strong> com esta mensagem pronta:
+      </p>
+      <div id="textoWhats" class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-xs text-sky-300 font-medium"></div>
+      <div class="flex gap-2 pt-1">
+        <a href="https://www.instagram.com/alagoinhasveiculos/" target="_blank" rel="noopener noreferrer"
+          class="flex-1 bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-extrabold py-3 rounded-xl text-center transition">
+          Ver Instagram da Loja
+        </a>
+        <button onclick="fecharModalWhats()" class="px-4 py-3 bg-slate-800 text-slate-200 text-xs font-bold rounded-xl cursor-pointer">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filtrar(categoria, btn) {
+      document.querySelectorAll('.filtro-btn').forEach(b => {
+        b.className = 'filtro-btn bg-slate-900 text-slate-300 border border-slate-800 text-xs font-semibold px-3.5 py-2 rounded-full cursor-pointer';
+      });
+      btn.className = 'filtro-btn bg-sky-500 text-slate-950 text-xs font-bold px-3.5 py-2 rounded-full cursor-pointer';
+
+      document.querySelectorAll('.card-carro').forEach(card => {
+        if (categoria === 'todos' || card.dataset.cat === categoria) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function abrirModalWhats(msg) {
+      document.getElementById('textoWhats').textContent = '"' + msg + '"';
+      document.getElementById('modalWhats').classList.remove('hidden');
+    }
+
+    function fecharModalWhats() {
+      document.getElementById('modalWhats').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
